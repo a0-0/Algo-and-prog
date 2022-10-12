@@ -67,7 +67,7 @@
 
 
         If (a < b) And (a < c) Then
-            If   Then
+            If (a < b) And (a < c) Then
                 MsgBox(text & vbNewLine & "Number 1 = " & a & vbNewLine & "Number 2 = " & b & vbNewLine & "Number 3 = " & c & vbNewLine & "the max = " & c)
             Else
                 MsgBox(text & vbNewLine & "Number 1 = " & a & vbNewLine & "Number 2 = " & b & vbNewLine & "Number 3 = " & c & vbNewLine & "the max = " & b)
@@ -188,7 +188,7 @@
         Y = Val(InputBox("Введите y:"))
         If (x > 0) And (Y > 0) Then
             MsgBox(text & vbNewLine & ("the point " & x & "," & Y & ")") & vbNewLine & "Четверть I")
-        ElseIf If(x < 0) And (Y > 0) Then
+        ElseIf (x < 0) And (Y > 0) Then
             MsgBox(text & vbNewLine & ("the point " & x & "," & Y & ")") & vbNewLine & "Четверть II")
         ElseIf (x < 0) And (Y < 0) Then
             MsgBox(text & vbNewLine & ("the point (" & x & "," & Y & ")") & vbNewLine & "Четверть III")
